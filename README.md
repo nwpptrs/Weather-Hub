@@ -248,7 +248,7 @@ Frontend จะทำงานที่ `http://localhost:5173`
 
 | Method | Endpoint          | Description |
 | ------ | ----------------- | ----------- |
-| `POST` | `/api/auth/login` | Login       |
+| `POST` | `/api/login` | Login       |
 
 ### Weather Data
 
@@ -261,8 +261,8 @@ Frontend จะทำงานที่ `http://localhost:5173`
 
 ### Locations
 
-| Method   | Endpoint                      | Description        |
-| -------- | ----------------------------- | ------------------ |
+| Method   | Endpoint                      | Description        | Query Params  |
+| -------- | ----------------------------- | ------------------ | ------------- |
 | `GET`    | `/api/locations`              | รายการเมืองทั้งหมด |
 | `POST`   | `/api/location`              | เพิ่มเมืองใหม่     |
 | `DELETE` | `/api/location/:id`          | ลบเมือง            |`location_id` |
