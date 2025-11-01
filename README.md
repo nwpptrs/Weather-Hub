@@ -28,31 +28,31 @@
 
 ### Frontend
 
-- Vue 3 + Vite (^4.0.0)
-- Vue Router (^4.0.0)
-- Chart.js (^4.5.1) - สำหรับแสดงกราฟข้อมูล
-- Leaflet (^1.9.4) - สำหรับระบบแผนที่
-- TailwindCSS (^4.1.16) - UI Framework
-- Axios + Cache (^1.12.2) - API Client with caching
-- SweetAlert2 (^11.26.3) - สำหรับ UI Notifications
+- Vue 3 + Vite 
+- Vue Router 
+- Chart.js - สำหรับแสดงกราฟข้อมูล
+- Leaflet - สำหรับระบบแผนที่
+- TailwindCSS - UI Framework
+- Axios + Cache - API Client with caching
+- SweetAlert2 - สำหรับ UI Notifications
 - Lucide Icons - สำหรับ UI Icons
 
 ### Backend
 
-- Node.js (>=18.x) + Express (^5.1.0)
-- Prisma (^6.17.1) - Type-safe ORM
-- PostgreSQL (>=14.x) - Database
-- JWT Authentication (^9.0.2) - สำหรับ Authentication
+- Node.js + Express
+- Prisma - Type-safe ORM
+- PostgreSQL - Database
+- JWT Authentication - สำหรับ Authentication
 - Open-Meteo API - Free Weather API
-- Node-Cron (^4.2.1) - สำหรับ Scheduled Tasks
-- Moment-timezone (^0.6.0) - สำหรับจัดการ Timezone
-- Dotenv (^17.2.3) - สำหรับจัดการ Environment Variables
-- Nodemon (^3.1.10) - สำหรับ Development
+- Node-Cron - สำหรับ Scheduled Tasks
+- Moment-timezone - สำหรับจัดการ Timezone
+- Dotenv - สำหรับจัดการ Environment Variables
+- Nodemon - สำหรับ Development
 
 ## 📋 ความต้องการของระบบ
 
-- Node.js >= 18.x
-- PostgreSQL >= 14.x (หรือใช้ Docker)
+- Node.js
+- PostgreSQL (หรือใช้ Docker)
 - npm
 - Git
 
@@ -61,7 +61,7 @@
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/weather-hub.git
+git clone https://github.com/nwpptrs/weather-hub
 cd weather-hub
 ```
 
@@ -111,7 +111,7 @@ brew services start postgresql
 
 **Windows:**
 
-- ดาวน์โหลดและติดตั้งจาก [postgresql.org](https://www.postgresql.org/download/windows/)
+- ดาวน์โหลดและติดตั้งจาก [postgresql.org](https://www.postgresql.org/download)
 
 **สร้างฐานข้อมูล:**
 
@@ -142,20 +142,8 @@ GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 # Database Configuration
 DATABASE_URL="postgresql://myuser:mypassword@localhost:5432/mydatabase"
 
-# Server Configuration
-PORT=3000
-
 # Authentication
 JWT_SECRET="weather_hub_super_secret"
-JWT_EXPIRES_IN="1h"
-
-# Admin Account
-ADMIN_PASSWORD="admin"
-
-# Weather API Configuration
-WEATHER_UPDATE_INTERVAL="0 * * * *"  # ทุก 1 ชั่วโมง
-MAX_BACKFILL_DAYS=7
-DEFAULT_TIMEZONE="Asia/Bangkok"
 ```
 
 > **หมายเหตุ:**
